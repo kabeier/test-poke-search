@@ -34,8 +34,8 @@ jobs:
         with:
           install: false
           start: npm run preview
-          wait-on: 'http://localhost:4173/pokesearch/'
-          config: baseUrl=http://localhost:4173/pokesearch/,specPattern=cypress/e2e-prod/**/*.cy.js
+          wait-on: 'http://localhost:4173/test-poke-search/'
+          config: baseUrl=http://localhost:4173/test-poke-search/,specPattern=cypress/e2e-prod/**/*.cy.js
 
       - name: Save dist/ for GitHub Pages
         if: github.event_name == 'push'
